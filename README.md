@@ -221,7 +221,7 @@ If you find our code or paper useful, please cite
 @article{lee2024segment,
       title = {Segment Any 3D Object with Language}, 
       author = {Lee, Seungjun and Zhao, Yuyang and Lee, Gim Hee},
-      year = {2024}
+      year = {2024},
       journal   = {arXiv preprint arXiv:2404.02157},
 }
 ```
