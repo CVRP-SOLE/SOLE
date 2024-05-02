@@ -45,6 +45,9 @@
       <a href="#weights">Weights</a>
     </li>
     <li>
+      <a href="#download-data-and-weight">Download data and weight</a>
+    </li>
+    <li>
       <a href="#training-and-testing">Training and Testing</a>
     </li>
     <li>
@@ -58,13 +61,14 @@
 
 ## News:
 
-- [2024/04/20] Code is released.
+- [2024/04/20] Code is released 💡.
+- [2024/05/02] Pre-processed data and weights are released. Now you can train and evaluate our SOLE 👏🏻.
 
 ## TODO
 - [x] Release the code
-- [ ] Release the preprocessed data
+- [x] Release the preprocessed data and weights
 - [ ] Release the evaluation code for Replica dataset
-- [ ] Release the preprocessed data and precomputed features for Replica dataset
+- [ ] Release the pre-processed data and precomputed features for Replica dataset
 
 ## Installation
 
@@ -104,19 +108,47 @@ pip3 install open-clip-torch
 
 ## Data Preparation
 
-We provide the **pre-processed 3D data** and **precomputed features** for the training and evaluation. You can download each data from the corresponding link below:
+We provide the **pre-processed 3D data** and **precomputed features** for the training and evaluation which are listed below:
 - Pre-processed 3D data
-  * <a href="">ScanNet</a>
-  * <a href="">ScanNet200</a>
+  * <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/processed/scannet">ScanNet</a>
+  * <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/processed/scannet200">ScanNet200</a>
   * ~~Replica~~ (coming soon)
 - Precomputed per-point CLIP features
-  * <a href="">ScanNet</a>
+  * <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/openseg/scannet">ScanNet</a>
   * ~~Replica~~ (coming soon)
 - Precomputed features of MCA and MEA
-  * <a href="">ScanNet</a>
-  * <a href="">ScanNet200</a>
+  * ScanNet : <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/scannet_mca">MCA</a>, <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/scannet_mea">MEA</a>
+  * ScanNet200 : <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/scannet200_mca">MCA</a>, <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/scannet200_mea">MEA</a> 
 
-Once you download the data, locate each files to the corresponding path indicated below:
+You can download the above data with following <a href="#download-data-and-weight">Download data and weight</a>.
+
+## Weights
+
+For the stable training, we employ a two-stage training process:
+
+1. Pretrain the backbone with only using mask-annotations.
+2. Train the mask decoder while backbone is fixed. Mask annotations and three types of associations are used for the training. (See the original paper for the details.)
+
+For the training, we provide pretrained backbone weights for ScanNet and ScanNet200 datasets listed below:
+- <a href="https://huggingface.co/datasets/onandon/SOLE/blob/main/backbone_scannet.ckpt">Backbone weights for ScanNet</a>
+- <a href="https://huggingface.co/datasets/onandon/SOLE/blob/main/backbone_scannet200.ckpt">Backbone weights for ScanNet200</a>
+
+For the evaluation, we provide the official weight of SOLE for ScanNet and ScanNet200 datasets listed below:
+- <a href="https://huggingface.co/datasets/onandon/SOLE/blob/main/scannet.ckpt">Offical weights of SOLE for ScanNet</a>
+- <a href="https://huggingface.co/datasets/onandon/SOLE/blob/main/scannet200.ckpt">Official weights of SOLE for ScanNet200</a>
+- ~~Official weights of SOLE for Replica~~ (coming soon)
+
+You can download all of the weights above for the pretrained backbone and SOLE with following <a href="#download-data-and-weight">Download data and weight</a>.
+
+## Download data and weight
+
+We provide the python script that download all of the pre-processed data and weights we mentioned above. You can run the command below:
+```
+python download_data.py
+```
+
+Once you run the above command, the downloaded files must be automatically located to the corresponding path. Refer to the file structure below.
+
 ```
 ├── data
 │   └── preprocessed
@@ -144,40 +176,18 @@ Once you download the data, locate each files to the corresponding path indicate
 │   └── scannet200_mea                <- Precomputed features of MEA for ScanNet200
 │       ├── scene0000_00.pickle
 │       ├── scene0000_01.pickle
-│       └── ...   
-```
-
-## Weights
-
-For the stable training, we employ a two-stage training process:
-
-1. Pretrain the backbone with only using mask-annotations.
-2. Train the mask decoder while backbone is fixed. Mask annotations and three types of associations are used for the training. (See the original paper for the details.)
-
-For the training, we provide pretrained backbone weights for ScanNet and ScanNet200 datasets. Download the weights from the link bellow:
-- <a href="">Backbone weights for ScanNet</a>
-- <a href="">Backbone weights for ScanNet200</a>
-
-Locate the downloaded backbone weights under the `backbone_checkpoint` folder like below:
-```
+│       └── ...
+│ 
 ├── backbone_checkpoint
 │   ├── backbone_scannet.ckpt        <- Backbone weights for ScanNet
 │   └── backbone_scannet200.ckpt     <- Backobne weights for ScanNet200
-```
-Once you download the provided data <a href="#data-preparation">here</a> and pretrained backbone weights, you are ready to train the model. Check the training command in <a href="#training-and-testing">Training and Testing</a> section.
-
-For the evaluation, we provide the official weight of SOLE for ScanNet and ScanNet200 datasets. Download the weights from the link below:
-- <a href="">Offical weights of SOLE for ScanNet</a>
-- <a href="">Official weights of SOLE for ScanNet200</a>
-- ~~Official weights of SOLE for Replica~~ (coming soon)
-
-Once you download the weights, locate the downloaded weights under the `checkpoint` folder like below:
-```
+│
 ├── checkpoint
 │   ├── scannet.ckpt        <- Official weights for ScanNet
 │   └── scannet200.ckpt     <- Official weights for ScanNet200
 ```
-Now you are ready to evaluate the model. Check the evaluation command in <a href="#training-and-testing">Training and Testing</a> section.
+
+If you successfully download all of the given files, you are now ready to train and evaluate the model. Check the training and evaluation command in <a href="#training-and-testing">Training and Testing</a> section.
 
 ## Training and Testing
 Train the SOLE on the ScanNet dataset.
