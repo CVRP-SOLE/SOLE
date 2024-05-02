@@ -62,7 +62,7 @@
 ## News:
 
 - [2024/04/20] Code is released 💡.
-- [2024/05/02] Preprocessed data is released. Now you can train and evaluate our SOLE 👏🏻.
+- [2024/05/02] Pre-processed data and weights are released. Now you can train and evaluate our SOLE 👏🏻.
 
 ## TODO
 - [x] Release the code
