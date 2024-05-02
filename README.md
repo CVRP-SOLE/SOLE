@@ -68,7 +68,7 @@
 - [x] Release the code
 - [x] Release the preprocessed data and weights
 - [ ] Release the evaluation code for Replica dataset
-- [ ] Release the preprocessed data and precomputed features for Replica dataset
+- [ ] Release the pre-processed data and precomputed features for Replica dataset
 
 ## Installation
 
