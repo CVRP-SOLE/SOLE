@@ -150,6 +150,14 @@ python download_data.py
 Once you run the above command, the downloaded files must be automatically located to the corresponding path. Refer to the file structure below.
 
 ```
+├── backbone_checkpoint
+│   ├── backbone_scannet.ckpt        <- Backbone weights for ScanNet
+│   └── backbone_scannet200.ckpt     <- Backobne weights for ScanNet200
+│
+├── checkpoint
+│   ├── scannet.ckpt        <- Official weights for ScanNet
+│   └── scannet200.ckpt     <- Official weights for ScanNet200
+│ 
 ├── data
 │   └── preprocessed
 │       ├── scannet                   <- Preprocessed ScanNet data
@@ -177,14 +185,6 @@ Once you run the above command, the downloaded files must be automatically locat
 │       ├── scene0000_00.pickle
 │       ├── scene0000_01.pickle
 │       └── ...
-│ 
-├── backbone_checkpoint
-│   ├── backbone_scannet.ckpt        <- Backbone weights for ScanNet
-│   └── backbone_scannet200.ckpt     <- Backobne weights for ScanNet200
-│
-├── checkpoint
-│   ├── scannet.ckpt        <- Official weights for ScanNet
-│   └── scannet200.ckpt     <- Official weights for ScanNet200
 ```
 
 If you successfully download all of the given files, you are now ready to train and evaluate the model. Check the training and evaluation command in <a href="#training-and-testing">Training and Testing</a> section.
