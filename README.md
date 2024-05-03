@@ -120,7 +120,7 @@ We provide the **pre-processed 3D data** and **precomputed features** for the tr
   * ScanNet : <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/scannet_mca">MCA</a>, <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/scannet_mea">MEA</a>
   * ScanNet200 : <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/scannet200_mca">MCA</a>, <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/scannet200_mea">MEA</a> 
 
-You can download the above data with following <a href="#download-data-and-weight">Download data and weight</a>.
+You can download above data with following <a href="#download-data-and-weight">Download data and weight</a>. We also provide the specific data configuration in <a href="https://huggingface.co/datasets/onandon/SOLE">here</a> to help your understanding for our pre-processed data.
 
 ## Weights
 
@@ -138,7 +138,7 @@ For the evaluation, we provide the official weight of SOLE for ScanNet and ScanN
 - <a href="https://huggingface.co/datasets/onandon/SOLE/blob/main/scannet200.ckpt">Official weights of SOLE for ScanNet200</a>
 - ~~Official weights of SOLE for Replica~~ (coming soon)
 
-You can download all of the weights above for the pretrained backbone and SOLE with following <a href="#download-data-and-weight">Download data and weight</a>.
+You can download all of the weights for the pretrained backbone and SOLE with following <a href="#download-data-and-weight">Download data and weight</a>.
 
 ## Download data and weight
 
@@ -187,7 +187,7 @@ Once you run the above command, the downloaded files must be automatically locat
 │       └── ...
 ```
 
-If you successfully download all of the given files, you are now ready to train and evaluate the model. Check the training and evaluation command in <a href="#training-and-testing">Training and Testing</a> section.
+If you successfully download all of the given files, you are now ready to train and evaluate the model. Check the training and evaluation command in <a href="#training-and-testing">Training and Testing</a> section to run the SOLE.
 
 ## Training and Testing
 Train the SOLE on the ScanNet dataset.
