@@ -10,7 +10,7 @@
     <sup>2</sup>National University of Singapore<br>
     <sup>*</sup>equal contribution
   </p>
-  <h2 align="center">arXiv 2024</h2>
+  <h2 align="center">ICLR 2025</h2>
   <h3 align="center"><a href="https://github.com/CVRP-SOLE/SOLE">Code</a> | <a href="https://arxiv.org/abs/2404.02157">Paper</a> | <a href="https://cvrp-sole.github.io">Project Page</a> </h3>
   <div align="center">
   <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
@@ -63,6 +63,7 @@
 
 - [2024/04/20] Code is released 💡.
 - [2024/05/02] Pre-processed data and weights are released. Now you can train and evaluate our SOLE 👏🏻.
+- [2025/01/23] SOLE is accepted to ICLR 2025 🔥. The code for Replica dataset and preprocessing the MMA features will be released soon.
 
 ## TODO
 - [x] Release the code
