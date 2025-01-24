@@ -3,7 +3,7 @@
 <p align="center">
   <h1 align="center">Segment Any 3D Object with Language</h1>
   <p align="center">
-    <a href="www.linkedin.com/in/seungjun-lee-43101a261">Seungjun Lee</a><sup>*</sup></span> · 
+    <a href="https://www.linkedin.com/in/seungjun-lee-43101a261/">Seungjun Lee</a><sup>*</sup></span> · 
     <a href="https://yuyangzhao.com">Yuyang Zhao</a><sup>*</sup> · 
     <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a><sup></sup> <br>
     National University of Singapore<br>
