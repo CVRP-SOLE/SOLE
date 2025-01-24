@@ -3,11 +3,10 @@
 <p align="center">
   <h1 align="center">Segment Any 3D Object with Language</h1>
   <p align="center">
-    <a href="https://github.com/0nandon">Seungjun Lee</a><sup>1*</sup></span> · 
-    <a href="https://yuyangzhao.com">Yuyang Zhao</a><sup>2*</sup> · 
-    <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a><sup>2</sup> <br>
-    <sup>1</sup>Korea University · 
-    <sup>2</sup>National University of Singapore<br>
+    <a href="https://github.com/0nandon">Seungjun Lee</a><sup>*</sup></span> · 
+    <a href="https://yuyangzhao.com">Yuyang Zhao</a><sup>*</sup> · 
+    <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a><sup></sup> <br>
+    National University of Singapore<br>
     <sup>*</sup>equal contribution
   </p>
   <h2 align="center">ICLR 2025</h2>
