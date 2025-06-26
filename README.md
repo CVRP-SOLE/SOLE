@@ -63,11 +63,12 @@
 - [2024/04/20] Code is released 💡.
 - [2024/05/02] Pre-processed data and weights are released. Now you can train and evaluate our SOLE 👏🏻.
 - [2025/01/23] SOLE is accepted to ICLR 2025 🔥. The code for Replica dataset and preprocessing the MMA features will be released soon.
-
+- [2025/06/25] The code for evaluaion on Replica dataset is released. Check <a href="https://github.com/CVRP-SOLE/replica_eval">this repository</a>!
+  
 ## TODO
 - [x] Release the code
 - [x] Release the preprocessed data and weights
-- [x] Release the evaluation code for Replica dataset. Check <a href="https://github.com/CVRP-SOLE/replica_eval">this repository</a> for the evaluation on Replica dataset.
+- [x] Release the evaluation code for Replica dataset.
 - [x] Release the pre-processed data and precomputed features for Replica dataset
 - [ ] Release the code for processing MVA, MCA and MEA
 
