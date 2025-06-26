@@ -113,10 +113,10 @@ We provide the **pre-processed 3D data** and **precomputed features** for the tr
 - Pre-processed 3D data
   * <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/processed/scannet">ScanNet</a>
   * <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/processed/scannet200">ScanNet200</a>
-  * ~~Replica~~ (coming soon)
+  * <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/processed/replica">Replica</a>
 - Precomputed per-point CLIP features
   * <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/openseg/scannet">ScanNet</a>
-  * ~~Replica~~ (coming soon)
+  * <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/openseg/replica">Replica</a>
 - Precomputed features of MCA and MEA
   * ScanNet : <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/scannet_mca">MCA</a>, <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/scannet_mea">MEA</a>
   * ScanNet200 : <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/scannet200_mca">MCA</a>, <a href="https://huggingface.co/datasets/onandon/SOLE/tree/main/scannet200_mea">MEA</a> 
