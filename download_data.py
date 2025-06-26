@@ -25,6 +25,7 @@ def setting():
     shutil.move("cache/backbone_scannet200.ckpt", BACKBONE_CHECKPOINT)
     shutil.move("cache/scannet.ckpt", CHECKPOINT)
     shutil.move("cache/scannet200.ckpt", CHECKPOINT)
+    shutil.move("cache/replica.ckpt", CHECKPOINT)
     shutil.move("cache/processed", PROCESSED_DATA)
     shutil.move("cache/openseg", OPENVOCAB)
     shutil.move("cache/scannet_mca", OPENVOCAB)
