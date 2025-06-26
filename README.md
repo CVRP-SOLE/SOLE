@@ -67,7 +67,7 @@
 ## TODO
 - [x] Release the code
 - [x] Release the preprocessed data and weights
-- [x] Release the evaluation code for Replica dataset
+- [x] Release the evaluation code for Replica dataset. Check <a href="https://github.com/CVRP-SOLE/replica_eval">this repository</a> for the evaluation on Replica dataset.
 - [x] Release the pre-processed data and precomputed features for Replica dataset
 - [ ] Release the code for processing MVA, MCA and MEA
 
