@@ -67,8 +67,9 @@
 ## TODO
 - [x] Release the code
 - [x] Release the preprocessed data and weights
-- [ ] Release the evaluation code for Replica dataset
-- [ ] Release the pre-processed data and precomputed features for Replica dataset
+- [x] Release the evaluation code for Replica dataset
+- [x] Release the pre-processed data and precomputed features for Replica dataset
+- [ ] Release the code for processing MVA, MCA and MEA
 
 ## Installation
 
