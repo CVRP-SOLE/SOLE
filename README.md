@@ -207,6 +207,9 @@ Evaluate the SOLE on the ScanNet200 dataset.
 ```
 bash scripts/scannet200/scannet200_val.sh
 ```
+Check <a href="https://github.com/CVRP-SOLE/replica_eval">this repository</a> for the evaluation on Replica dataset.
+
+
 If you want to use <a href="https://docs.wandb.ai" >wandb</a> during the training, set the `workspace` in `conf/config_base_instance_segmentation.yaml` file to your wandb workspace name. And run the command below before running the training/testing command:
 ```
 wandb enabled
