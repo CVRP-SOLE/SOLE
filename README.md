@@ -162,14 +162,20 @@ Once you run the above command, the downloaded files must be automatically locat
 ├── data
 │   └── preprocessed
 │       ├── scannet                   <- Preprocessed ScanNet data
-│       └── scannet200                <- Preprocessed ScanNet200 data
+│       ├── scannet200                <- Preprocessed ScanNet200 data
+|       └── replica                   <- Preprocessed Replica data
 │   
 ├── openvocab_supervision
 │   ├── openseg     
-│   │   └── scannet                   <- Precomputed per-point CLIP features for ScanNet
-│   │       ├── scene0000_00_0.pt
-│   │       ├── scene0000_01_0.pt
+│   │   ├── scannet                   <- Precomputed per-point CLIP features for ScanNet
+│   │   │   ├── scene0000_00_0.pt
+│   │   │   ├── scene0000_01_0.pt
+│   │   │   └── ...
+|   |   └── replica                   <- Precomputed per-point CLIP features for Replica
+│   │       ├── office0_0.pt
+│   │       ├── office1_0.pt
 │   │       └── ...
+|   |
 │   ├── scannet_mca                   <- Precomputed features of MCA for ScanNet
 │   │   ├── scene0000_00.pickle
 │   │   ├── scene0000_01.pickle
