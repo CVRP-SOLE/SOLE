@@ -137,7 +137,7 @@ For the training, we provide pretrained backbone weights for ScanNet and ScanNet
 For the evaluation, we provide the official weight of SOLE for ScanNet and ScanNet200 datasets listed below:
 - <a href="https://huggingface.co/datasets/onandon/SOLE/blob/main/scannet.ckpt">Offical weights of SOLE for ScanNet</a>
 - <a href="https://huggingface.co/datasets/onandon/SOLE/blob/main/scannet200.ckpt">Official weights of SOLE for ScanNet200</a>
-- ~~Official weights of SOLE for Replica~~ (coming soon)
+- <a href="https://huggingface.co/datasets/onandon/SOLE/blob/main/replica.ckpt">Official weights of SOLE for Replica</a>
 
 You can download all of the weights for the pretrained backbone and SOLE with following <a href="#download-data-and-weight">Download data and weight</a>.
 
